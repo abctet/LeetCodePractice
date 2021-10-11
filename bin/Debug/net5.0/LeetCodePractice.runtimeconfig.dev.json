@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\tetala\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tetala\\.nuget\\packages"
+    ]
+  }
+}
