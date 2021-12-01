@@ -9,16 +9,36 @@ namespace LeetCodePractice
         static void Main(string[] args)
         {
             //TwoSum variables
-            /*int[] sums = { 3,2,3 };
-            int target = 6;
-            var r = TwoSum(sums,target);
+            /*int[] nums = { 2, 7, 11, 15, 3 };
+            int target = 10;
+            var r = TwoSum.TwoSumOS(nums, target);
             Array.ForEach(r, Console.WriteLine);*/
+
+            //SearchInsert
+            /*int[] nums = { 1, 3, 5, 6 };
+            int target = 6;
+            Console.WriteLine(SearchInsert.SearchInsertOS(nums,target));*/
+
+            //Merge Sorted Arrays
+            /*int[] nums1 = { 3, 5, 0, 0, 0, 0 }, nums2 = { 1, 2, 6, 7};
+            int m = 2, n = 4;
+            MergeSortedArrays.MergeSortedArraysOS(nums1, m, nums2, n);
+            Array.ForEach(nums1, Console.WriteLine);*/
+
+            //Max Sub Array
+            /*int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            var res = MaxSubArray.MaxSubArrayOS(nums);
+            Console.WriteLine(res);*/
+
+            //Nth number of a Fibonacci series
+            Console.WriteLine(DynamicProgramming_Fibonacci.FibonacciNthNumber_Recursion_DP(9));
 
             //IsPalindrome variables
             /*int x = 11;
             var res = IsPalindrome(x);
             Console.WriteLine(res);*/
 
+            /*
             //RomanToInt variables
             while (true)
             {
@@ -31,28 +51,8 @@ namespace LeetCodePractice
                 var res = RomanToInt(s);
                 Console.WriteLine(res);
             }
-            
-        }
+            */
 
-        public static int[] TwoSum(int[] nums, int target)
-        {
-            int[] res = new int[2];
-            for (int i = 0; i < nums.Length; i++)
-            {
-                //int[] subarr = nums.Skip(i+1).ToArray();
-                int testsum = nums[i];
-                for (int j = i+1; j < nums.Length; j++)
-                {
-                    var r2 = testsum+nums[j];
-                    if (r2==target)
-                    {
-                        res[0] = i;
-                        res[1] = j;
-                        return res;
-                    }
-                }
-            }
-            return res;
         }
 
         public static bool IsPalindrome(int x)
